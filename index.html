@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Numblr</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Numblr</h1>
+      <p class="tagline">One guess per day. No second chances. No rush.</p>
+    </header>
+
+    <div id="game-area">
+      <div class="level-meta">
+        <span id="level-label">Level 1</span>
+        <span id="level-progress">Level 1 of 4</span>
+      </div>
+
+      <p class="prompt">Pick a number between</p>
+      <span id="level-range">1 – 20</span>
+
+      <div class="input-row">
+        <input
+          type="number"
+          id="guess-input"
+          placeholder="Your number"
+          min="1"
+          max="20"
+        />
+        <button id="guess-btn">Guess</button>
+      </div>
+
+      <p id="result-area" class="result"></p>
+    </div>
+
+    <p id="note">
+      Numblr limits you to one guess per day intentionally.
+      The point is not to keep playing — it is to make one deliberate
+      choice and move on with your day.
+    </p>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
