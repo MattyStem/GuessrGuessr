@@ -1,4 +1,4 @@
-// GuessrGuessr – one guess per day, four progressive levels.
+// Numblr – one guess per day, four progressive levels.
 // Anti-gambling design: no retry prompts, no urgency, no rewards beyond progress.
 
 const LEVELS = [
@@ -33,7 +33,7 @@ function getDailyTarget(levelIndex) {
 }
 
 // --- LocalStorage state ---
-const STORAGE_KEY = "guessr_state";
+const STORAGE_KEY = "numblr_state";
 
 function loadState() {
   try {
